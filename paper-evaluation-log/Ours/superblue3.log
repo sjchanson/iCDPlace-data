@@ -1,0 +1,75 @@
+================================================================================
+    ICCAD 2015 Incremental Timing-Driven Placement Contest Evaluation Script    
+    Authors : Myung-Chul Kim, Jin Hu {mckima, jinhu}@us.ibm.com                 
+================================================================================
+Command line : 
+ iccad2015_evaluate_solution ICCAD15.parm input/superblue3.iccad2015 0.87 final.def final.ops
+
+Reading parameter file ..
+-------------------------------------------------------------------------------
+  LOCAL_WIRE_RESISTANCE   : 2.535 Ohm/um
+  LOCAL_WIRE_CAPACITANCE  : 1.6e-16 Farad/um
+  MAX_WIRE_SEGMENT_LENGTH : 100 um
+  MAX_LCB_FANOUTS         : 50
+-------------------------------------------------------------------------------
+
+Reading .iccad2015 file ..
+-------------------------------------------------------------------------------
+  benchmark name  : superblue3
+  directory       : input/
+  .iccad2015 file : input/superblue3.iccad2015
+-------------------------------------------------------------------------------
+  directory       : input/
+  early .lib file : input/superblue3_Early.lib
+  late  .lib file : input/superblue3_Late.lib
+  .lef file       : input/superblue3.lef
+  .v file         : input/superblue3.v
+  .sdc file       : input/superblue3.sdc
+  .def file       : input/superblue3.def
+-------------------------------------------------------------------------------
+  total cells     : 1213253
+  total nets      : 1224979
+  design area     : 1.22174e+14
+  total f_area    : 6.87375e+13
+  total m_area    : 2.50827e+13
+  design util     : 0.469388
+  num rows        : 1840
+  row height      : 3420
+--------------------------------------------------------------------------------
+  final .def file : final.def
+  .ops file       : final.ops
+
+Sanity checking .ops ..
+--------------------------------------------------------------------------------
+
+Evaluating the solution file ..                                                 
+--------------------------------------------------------------------------------
+Analyzing placement .. 
+  max displ. (um) : 399.95
+  numBins         : 129560 ( 632 x 205 )
+  bin dimension   : 30780 x 30780
+  target util     : 0.87
+  ABU_2,5,10,20   : 0.883509, 0.863884, 0.839402, 0.796692
+  ABU penalty     : 0.00913367
+  alpha           : 1
+
+Analyzing timing .. 
+  FLUTE: Total 788477 internal Steiner points are found.
+  Slicing wire segments: 3460423 --> 4135659 ( < 100 um )
+  HPWL, StWL (um) : 109739134.07, 115814106.26
+  Scaled StWL     : 116871913.86 ( 0.91% )
+  Clock period    : 10000.00
+  early WNS, TNS  : 0.00000e+00, 0.00000e+00
+  late  WNS, TNS  : -6.33970e+03, -6.93896e+05
+--------------------------------------------------------------------------------
+
+Checking legality .. 
+--------------------------------------------------------------------------------
+  Testing ILLEGAL_TYPE 1 .. 0
+  Testing ILLEGAL_TYPE 2 .. 0
+  Testing ILLEGAL_TYPE 3 .. 0
+  Testing ILLEGAL_TYPE 4 .. 0
+  Testing ILLEGAL_TYPE 5 .. 0
+  Testing ILLEGAL_TYPE 6 .. 0
+Placement is LEGAL.
+--------------------------------------------------------------------------------
