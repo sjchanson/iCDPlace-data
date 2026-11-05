@@ -1,5 +1,10 @@
 # iCDPlace: Final Placement Results
 
+## Source data
+
+Due to storage limitations, the original files in the benchmark and paper-final-output directories of iCDPlace are available for download from
+[Google Drive](https://drive.google.com/drive/folders/1APH9IsgAq1snn3QAXGcu38Y8qmpNLpfW?usp=drive_link).
+
 This dataset contains the final placement solutions and official evaluation
 reports for three configurations evaluated in the following paper:
 
@@ -78,8 +83,3 @@ To evaluate one benchmark or choose another output directory:
 
 Arguments are `[method] [benchmark|All] [output-directory]`. Existing method
 reports are not overwritten; use a new output directory for another run.
-
-## Source data
-
-The source data are available on
-[Google Drive](https://drive.google.com/drive/folders/1APH9IsgAq1snn3QAXGcu38Y8qmpNLpfW?usp=drive_link).
