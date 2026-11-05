@@ -1,7 +1,5 @@
 # iCDPlace: Final Placement Results
 
-## Source data
-
 Due to storage limitations, the original files in the benchmark and paper-final-output directories of iCDPlace are available for download from
 [Google Drive](https://drive.google.com/drive/folders/1APH9IsgAq1snn3QAXGcu38Y8qmpNLpfW?usp=drive_link).
 
